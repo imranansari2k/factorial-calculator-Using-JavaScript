@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Factorial</title>
+<style type="text/css">
+
+  /*
+  Author Imran Ansari 
+  Website www.ansariji.free.nf 
+  */
+	.main{
+		/* box shedow 
+		box-shadow: 0px 0px 10px 5px gray;
+		( 'X' 0px horijontal) ( 'Y' 0px vartical) (10px Bluar raiting) (5px Range) (gray color); 
+		*/
+		margin: 50px 0px 0px 50px;
+		box-shadow: -50px 20px 50px 20px #23c2a45c;
+		border-top-width: 1px;
+        border-right-width: 14px;
+        margin-bottom: 50px;
+		padding-top: 5px;
+		padding-right: 10px;
+		padding-left: 15px;
+		width: 240px;
+		height: 245px;
+		background-color: darkcyan;
+		border-radius:61px; 
+		border:0.1px solid #e5f1f4;
+
+	}
+	#ans{
+		color: white;
+		font-weight: bolder;
+		size: 25px;
+		margin-top: 10px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-right:40px;
+		padding-left: 30px; 
+		padding-left-right:5px; 
+		background-color: #75cece1a;
+		border:3px solid #00fff3;
+	}
+	h3{
+		font-weight: bolder;
+		margin top: 10px;
+		padding-left: 17px;
+		color: #fff;
+		border-bottom:5px solid #abf4e06b;
+	}
+	#fack{
+		color: #fff;
+		margin-top: 20px;
+		font-weight: bolder;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-right:40px;
+		padding-left: 30px; 
+		padding-left-right:5px; 
+		background-color: #75cece1a;
+		border:3px solid #00fff3;
+	}
+	button{
+		border:3px solid #00fff3;
+		color: #09847es;
+		border-radius: 25px;
+		width: 234px;
+		margin-top: 15px;
+		padding: 6px 50px 6px 50px;
+		word-spacing: 2px;
+		font-weight: bolder;
+
+	}
+	button:hover{
+		background-color: #00fff3;
+		color: #04008d;
+		border-color: #fff;
+		word-wrap: 25px;
+		font-weight: bolder;
+		
+
+	}
+
+</style>
+
+</head>
+<body>
+	<div class="main">
+		<h3>Calculate The Factorial</h3>
+	<input type="text" readonly="" id="ans" name="" >
+    <input type="text" id="fack" name="" >
+    <button onclick="fc()" id="but">
+	     Submit
+    </button>
+
+    </div>
+</body>
+<script type="text/javascript">
+	function fc(){
+		var x=document.getElementById('fack').value;
+        var fu=1;
+		for (var i = x; i >=1; i--) {
+			fu=fu*i;
+		}
+        document.getElementById('ans').value = fu;
+	}
+
+</script>
+</html>
